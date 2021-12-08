@@ -33,7 +33,6 @@ A vue d'oeil, les types d'entités qui seront utilisés:
 - Ingrédients
 - Allergènes
 - Quartiers/Zip
-- Propriétaires
 - Commandes OU/ET Réservations
 - Utilisateurs
   - qui commande
