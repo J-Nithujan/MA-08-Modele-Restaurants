@@ -6,7 +6,7 @@ MLD
   - [ ] Vérifier les clefs primaires des assoc.
 - [ ] Vérifier pour chaque table
   - [ ] les types des attributs
-    - [ ] Type `DECIMAL` pour les prix et valeurs exactes, plutôt que des `INT` ou `FLOAT`s
+    - [x] Type `DECIMAL` pour les prix et valeurs exactes, plutôt que des `INT` ou `FLOAT`s
   - [ ] quels attributs devraient être non `Null`
   - [ ] Vérifier les contraintes (UNIQUE, ...)
   - [ ] nommage
@@ -31,8 +31,8 @@ MLD
 Cahier des charges
 
 - [ ] Ajouter des objectifs
-  - [ ] "connaitre les propriétaire du restaurant X"
+  - [x] "connaitre les propriétaire du restaurant X"
   - [ ] ... [ajouter des types de questions auxquelles on pourrait vouloir répondre] ...
-- [ ] compléter phrases à moitié entammées
+- [ ] compléter phrases à moitié entamées
 - [ ] Cohérence de la place de certains paragraphes. Des paragraphes à déplacer ?
 
