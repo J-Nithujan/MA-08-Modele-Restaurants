@@ -14,9 +14,9 @@ MLD
       - [ ] pour les tables
       - [ ] pour les tables intermédiaires
     - [ ] nommage des champs
-    - [ ] PAS d'espaces pour les noms de tables. (underscores)
-    - [ ] PAS d'espaces pour les champs
-    - [ ] PAS d'espaces pour les associations (noms de table et champs)
+    - [x] PAS d'espaces pour les noms de tables. (underscores)
+    - [x] PAS d'espaces pour les champs
+    - [x] PAS d'espaces pour les associations (noms de table et champs)
   - [ ] Taille de certains types numériques (decimal, ...)
 - [ ] Les standards
   - [ ] `Varchar`s
@@ -31,4 +31,5 @@ MLD
 Cahier des charges
 
 - [ ] compléter phrases à moitié entammées
+- [ ] Cohérence de la place de certains paragraphes. Des paragraphes à déplacer ?
 
