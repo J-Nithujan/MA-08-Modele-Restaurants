@@ -30,6 +30,9 @@ MLD
 
 Cahier des charges
 
+- [ ] Ajouter des objectifs
+  - [ ] "connaitre les propriétaire du restaurant X"
+  - [ ] ... [ajouter des types de questions auxquelles on pourrait vouloir répondre] ...
 - [ ] compléter phrases à moitié entammées
 - [ ] Cohérence de la place de certains paragraphes. Des paragraphes à déplacer ?
 
