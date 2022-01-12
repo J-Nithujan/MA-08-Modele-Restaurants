@@ -1,7 +1,146 @@
+USE [db_restaurants]
+GO
+ALTER TABLE [dbo].[users] DROP CONSTRAINT [FK_users_locations]
+GO
+ALTER TABLE [dbo].[reviews] DROP CONSTRAINT [FK_reviews_users]
+GO
+ALTER TABLE [dbo].[reviews] DROP CONSTRAINT [FK_reviews_restaurants]
+GO
+ALTER TABLE [dbo].[restaurants] DROP CONSTRAINT [FK_restaurants_locations]
+GO
+ALTER TABLE [dbo].[restaurant_hast_type_of_restaurant] DROP CONSTRAINT [FK_restaurant_hast_type_of_restaurant_restaurants]
+GO
+ALTER TABLE [dbo].[restaurant_hast_type_of_restaurant] DROP CONSTRAINT [FK_restaurant_hast_type_of_restaurant_restaurant_types]
+GO
+ALTER TABLE [dbo].[restaurant_has_user] DROP CONSTRAINT [FK_restaurant_has_user_users]
+GO
+ALTER TABLE [dbo].[restaurant_has_user] DROP CONSTRAINT [FK_restaurant_has_user_restaurants]
+GO
+ALTER TABLE [dbo].[restaurant_has_sale] DROP CONSTRAINT [FK_restaurant_has_sale_sales]
+GO
+ALTER TABLE [dbo].[restaurant_has_sale] DROP CONSTRAINT [FK_restaurant_has_sale_restaurants]
+GO
+ALTER TABLE [dbo].[restaurant_has_dish] DROP CONSTRAINT [FK_restaurant_has_dish_restaurants]
+GO
+ALTER TABLE [dbo].[restaurant_has_dish] DROP CONSTRAINT [FK_restaurant_has_dish_dishes]
+GO
+ALTER TABLE [dbo].[orders] DROP CONSTRAINT [FK_orders_users]
+GO
+ALTER TABLE [dbo].[order_has_order_detail] DROP CONSTRAINT [FK_order_has_order_detail_orders]
+GO
+ALTER TABLE [dbo].[order_has_order_detail] DROP CONSTRAINT [FK_order_has_order_detail_order_details]
+GO
+ALTER TABLE [dbo].[order_details] DROP CONSTRAINT [FK_order_details_orders]
+GO
+ALTER TABLE [dbo].[order_details] DROP CONSTRAINT [FK_order_details_dishes]
+GO
+ALTER TABLE [dbo].[order_detail_has_ingredient] DROP CONSTRAINT [FK_order_detail_has_ingredient_order_details]
+GO
+ALTER TABLE [dbo].[order_detail_has_ingredient] DROP CONSTRAINT [FK_order_detail_has_ingredient_ingredients]
+GO
+ALTER TABLE [dbo].[ingredients] DROP CONSTRAINT [FK_ingredients_measurement_units]
+GO
+ALTER TABLE [dbo].[dishes] DROP CONSTRAINT [FK_dishes_dishes_types]
+GO
+ALTER TABLE [dbo].[dish_has_ingredient] DROP CONSTRAINT [FK_dish_has_ingredient_ingredients]
+GO
+ALTER TABLE [dbo].[dish_has_ingredient] DROP CONSTRAINT [FK_dish_has_ingredient_dishes]
+GO
+ALTER TABLE [dbo].[dish_has_allergen] DROP CONSTRAINT [FK_dish_has_allergen_dishes]
+GO
+ALTER TABLE [dbo].[dish_has_allergen] DROP CONSTRAINT [FK_dish_has_allergen_allergens]
+GO
+/****** Object:  Table [dbo].[users]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[users]') AND type in (N'U'))
+DROP TABLE [dbo].[users]
+GO
+/****** Object:  Table [dbo].[sales]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sales]') AND type in (N'U'))
+DROP TABLE [dbo].[sales]
+GO
+/****** Object:  Table [dbo].[reviews]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[reviews]') AND type in (N'U'))
+DROP TABLE [dbo].[reviews]
+GO
+/****** Object:  Table [dbo].[restaurants]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurants]') AND type in (N'U'))
+DROP TABLE [dbo].[restaurants]
+GO
+/****** Object:  Table [dbo].[restaurant_types]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_types]') AND type in (N'U'))
+DROP TABLE [dbo].[restaurant_types]
+GO
+/****** Object:  Table [dbo].[restaurant_hast_type_of_restaurant]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_hast_type_of_restaurant]') AND type in (N'U'))
+DROP TABLE [dbo].[restaurant_hast_type_of_restaurant]
+GO
+/****** Object:  Table [dbo].[restaurant_has_user]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_has_user]') AND type in (N'U'))
+DROP TABLE [dbo].[restaurant_has_user]
+GO
+/****** Object:  Table [dbo].[restaurant_has_sale]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_has_sale]') AND type in (N'U'))
+DROP TABLE [dbo].[restaurant_has_sale]
+GO
+/****** Object:  Table [dbo].[restaurant_has_dish]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_has_dish]') AND type in (N'U'))
+DROP TABLE [dbo].[restaurant_has_dish]
+GO
+/****** Object:  Table [dbo].[orders]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[orders]') AND type in (N'U'))
+DROP TABLE [dbo].[orders]
+GO
+/****** Object:  Table [dbo].[order_has_order_detail]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[order_has_order_detail]') AND type in (N'U'))
+DROP TABLE [dbo].[order_has_order_detail]
+GO
+/****** Object:  Table [dbo].[order_details]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[order_details]') AND type in (N'U'))
+DROP TABLE [dbo].[order_details]
+GO
+/****** Object:  Table [dbo].[order_detail_has_ingredient]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[order_detail_has_ingredient]') AND type in (N'U'))
+DROP TABLE [dbo].[order_detail_has_ingredient]
+GO
+/****** Object:  Table [dbo].[measurement_units]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[measurement_units]') AND type in (N'U'))
+DROP TABLE [dbo].[measurement_units]
+GO
+/****** Object:  Table [dbo].[locations]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[locations]') AND type in (N'U'))
+DROP TABLE [dbo].[locations]
+GO
+/****** Object:  Table [dbo].[ingredients]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[ingredients]') AND type in (N'U'))
+DROP TABLE [dbo].[ingredients]
+GO
+/****** Object:  Table [dbo].[dishes_types]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[dishes_types]') AND type in (N'U'))
+DROP TABLE [dbo].[dishes_types]
+GO
+/****** Object:  Table [dbo].[dishes]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[dishes]') AND type in (N'U'))
+DROP TABLE [dbo].[dishes]
+GO
+/****** Object:  Table [dbo].[dish_has_ingredient]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[dish_has_ingredient]') AND type in (N'U'))
+DROP TABLE [dbo].[dish_has_ingredient]
+GO
+/****** Object:  Table [dbo].[dish_has_allergen]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[dish_has_allergen]') AND type in (N'U'))
+DROP TABLE [dbo].[dish_has_allergen]
+GO
+/****** Object:  Table [dbo].[allergens]    Script Date: 12.01.2022 09:37:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[allergens]') AND type in (N'U'))
+DROP TABLE [dbo].[allergens]
+GO
 USE [master]
 GO
 
-/****** Object:  Database [db_restaurants]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Database [db_restaurants]    Script Date: 12.01.2022 09:37:42 ******/
+DROP DATABASE [db_restaurants]
+GO
+/****** Object:  Database [db_restaurants]    Script Date: 12.01.2022 09:37:42 ******/
 CREATE DATABASE [db_restaurants]
  CONTAINMENT = NONE
  ON  PRIMARY 
