@@ -1,4 +1,4 @@
-Réfléexions à faire ensemble:
+Réflexions à faire ensemble:
 
 - [ ] Promo code pas pour tous les clients
     promo code (i.e. promotion name) dans la table orders (commande) ?
