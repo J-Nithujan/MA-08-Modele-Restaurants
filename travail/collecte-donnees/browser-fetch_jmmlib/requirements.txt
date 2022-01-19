@@ -1,0 +1,5 @@
+bs4
+lxml
+
+jmm -e git+https://github.com/JeffMv/jmm-util-libs.git@releases
+

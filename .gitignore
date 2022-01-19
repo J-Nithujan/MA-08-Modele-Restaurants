@@ -1,3 +1,7 @@
 # temp files
 ~$*.*
 travail/temporaire/
+
+*.pyc
+
+travail/collecte-donnees/browser-fetch_jmmlib/jmm/
