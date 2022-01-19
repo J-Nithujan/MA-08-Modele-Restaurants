@@ -421,7 +421,7 @@ CREATE TABLE [dbo].[restaurant_has_dish](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[restaurant_has_sale]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[restaurant_has_sale]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -431,8 +431,8 @@ CREATE TABLE [dbo].[restaurant_has_sale](
 	[restaurant_id] [int] NULL,
 	[sale_id] [int] NULL,
 	[percentage] [int] NULL,
-	[since] [datetime] NULL,
-	[until] [datetime] NULL,
+	[start] [datetime] NULL,
+	[end] [datetime] NULL,
  CONSTRAINT [PK_restaurant_has_sale] PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
