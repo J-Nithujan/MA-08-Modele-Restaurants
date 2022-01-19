@@ -1,0 +1,60 @@
+INSERT INTO [myTable] (id,city)
+VALUES
+  (1,'ipsum'),
+  (2,'volutpat.'),
+  (3,'Nam'),
+  (4,'porttitor'),
+  (5,'hendrerit'),
+  (6,'eget,'),
+  (7,'neque.'),
+  (8,'lorem,'),
+  (9,'vulputate'),
+  (10,'ut');
+INSERT INTO [myTable] (id,city)
+VALUES
+  (11,'dictum'),
+  (12,'ac'),
+  (13,'massa.'),
+  (14,'dui'),
+  (15,'magna'),
+  (16,'non'),
+  (17,'tellus'),
+  (18,'id'),
+  (19,'nascetur'),
+  (20,'facilisis');
+INSERT INTO [myTable] (id,city)
+VALUES
+  (21,'eros'),
+  (22,'conubia'),
+  (23,'vel,'),
+  (24,'lacus.'),
+  (25,'viverra.'),
+  (26,'pede.'),
+  (27,'dolor'),
+  (28,'arcu'),
+  (29,'non'),
+  (30,'Aenean');
+INSERT INTO [myTable] (id,city)
+VALUES
+  (31,'tellus'),
+  (32,'aliquet.'),
+  (33,'odio'),
+  (34,'molestie.'),
+  (35,'ultrices'),
+  (36,'vitae,'),
+  (37,'neque'),
+  (38,'neque.'),
+  (39,'sociis'),
+  (40,'malesuada');
+INSERT INTO [myTable] (id,city)
+VALUES
+  (41,'nisl'),
+  (42,'eu'),
+  (43,'nunc'),
+  (44,'Sed'),
+  (45,'ipsum.'),
+  (46,'justo.'),
+  (47,'scelerisque'),
+  (48,'a,'),
+  (49,'mauris'),
+  (50,'adipiscing.');

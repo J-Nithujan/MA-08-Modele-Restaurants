@@ -44,7 +44,6 @@ MLD
 
 
 
-
 **Script création de BDD**
 
 - [ ] Contraintes
@@ -79,10 +78,13 @@ MLD
 
 
 
+**Insertion de donnés**
+
+- [ ] Noms des tables dans les scripts d'insertion ([Table] -> [dbrestaurants].[ingredients] p.ex.)
 
 
 
-Cahier des charges
+**Cahier des charges**
 
 - [ ] Ajouter des objectifs
   - [x] "connaitre les propriétaire du restaurant X"
@@ -101,10 +103,10 @@ Cahier des charges
 
 
 
-- [ ] Dans l'idée de différencier le prix des plats en fonction du restaurant, et de différencier le prix des ingrédients en fonction des plats,
+- [x] Dans l'idée de différencier le prix des plats en fonction du restaurant, et de différencier le prix des ingrédients en fonction des plats,
     je (Jeffrey) pense à intégrer les champs prix dans les tables intermédiaires (`restaurants_have_dishes` et `dishes_have_ingredients`).
-  - [ ] Je suppose que ça fonctionnera en MLD (i.e. nous permettra de retrouver et faire des requêtes pour toutes les données). Est-ce correct ?
-  - [ ] Je ne vois pas comment faire un MLD valide et cohérent avec cette approche. Une idée (du prof) ?
+  - [x] Je suppose que ça fonctionnera en MLD (i.e. nous permettra de retrouver et faire des requêtes pour toutes les données). Est-ce correct ?
+  - [ ] ~~Je ne vois pas comment faire un MLD valide et cohérent avec cette approche. Une idée (du prof) ?~~
 
 
 

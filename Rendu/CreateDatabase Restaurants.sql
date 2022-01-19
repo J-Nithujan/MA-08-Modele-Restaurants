@@ -50,97 +50,96 @@ ALTER TABLE [dbo].[dish_has_allergen] DROP CONSTRAINT [FK_dish_has_allergen_dish
 GO
 ALTER TABLE [dbo].[dish_has_allergen] DROP CONSTRAINT [FK_dish_has_allergen_allergens]
 GO
-/****** Object:  Table [dbo].[users]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[users]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[users]') AND type in (N'U'))
 DROP TABLE [dbo].[users]
 GO
-/****** Object:  Table [dbo].[sales]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[sales]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sales]') AND type in (N'U'))
 DROP TABLE [dbo].[sales]
 GO
-/****** Object:  Table [dbo].[reviews]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[reviews]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[reviews]') AND type in (N'U'))
 DROP TABLE [dbo].[reviews]
 GO
-/****** Object:  Table [dbo].[restaurants]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[restaurants]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurants]') AND type in (N'U'))
 DROP TABLE [dbo].[restaurants]
 GO
-/****** Object:  Table [dbo].[restaurant_types]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[restaurant_types]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_types]') AND type in (N'U'))
 DROP TABLE [dbo].[restaurant_types]
 GO
-/****** Object:  Table [dbo].[restaurant_hast_type_of_restaurant]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[restaurant_hast_type_of_restaurant]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_hast_type_of_restaurant]') AND type in (N'U'))
 DROP TABLE [dbo].[restaurant_hast_type_of_restaurant]
 GO
-/****** Object:  Table [dbo].[restaurant_has_user]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[restaurant_has_user]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_has_user]') AND type in (N'U'))
 DROP TABLE [dbo].[restaurant_has_user]
 GO
-/****** Object:  Table [dbo].[restaurant_has_sale]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[restaurant_has_sale]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_has_sale]') AND type in (N'U'))
 DROP TABLE [dbo].[restaurant_has_sale]
 GO
-/****** Object:  Table [dbo].[restaurant_has_dish]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[restaurant_has_dish]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_has_dish]') AND type in (N'U'))
 DROP TABLE [dbo].[restaurant_has_dish]
 GO
-/****** Object:  Table [dbo].[orders]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[orders]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[orders]') AND type in (N'U'))
 DROP TABLE [dbo].[orders]
 GO
-/****** Object:  Table [dbo].[order_has_order_detail]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[order_has_order_detail]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[order_has_order_detail]') AND type in (N'U'))
 DROP TABLE [dbo].[order_has_order_detail]
 GO
-/****** Object:  Table [dbo].[order_details]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[order_details]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[order_details]') AND type in (N'U'))
 DROP TABLE [dbo].[order_details]
 GO
-/****** Object:  Table [dbo].[order_detail_has_ingredient]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[order_detail_has_ingredient]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[order_detail_has_ingredient]') AND type in (N'U'))
 DROP TABLE [dbo].[order_detail_has_ingredient]
 GO
-/****** Object:  Table [dbo].[measurement_units]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[measurement_units]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[measurement_units]') AND type in (N'U'))
 DROP TABLE [dbo].[measurement_units]
 GO
-/****** Object:  Table [dbo].[locations]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[locations]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[locations]') AND type in (N'U'))
 DROP TABLE [dbo].[locations]
 GO
-/****** Object:  Table [dbo].[ingredients]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[ingredients]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[ingredients]') AND type in (N'U'))
 DROP TABLE [dbo].[ingredients]
 GO
-/****** Object:  Table [dbo].[dishes_types]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[dishes_types]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[dishes_types]') AND type in (N'U'))
 DROP TABLE [dbo].[dishes_types]
 GO
-/****** Object:  Table [dbo].[dishes]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[dishes]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[dishes]') AND type in (N'U'))
 DROP TABLE [dbo].[dishes]
 GO
-/****** Object:  Table [dbo].[dish_has_ingredient]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[dish_has_ingredient]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[dish_has_ingredient]') AND type in (N'U'))
 DROP TABLE [dbo].[dish_has_ingredient]
 GO
-/****** Object:  Table [dbo].[dish_has_allergen]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[dish_has_allergen]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[dish_has_allergen]') AND type in (N'U'))
 DROP TABLE [dbo].[dish_has_allergen]
 GO
-/****** Object:  Table [dbo].[allergens]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Table [dbo].[allergens]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[allergens]') AND type in (N'U'))
 DROP TABLE [dbo].[allergens]
 GO
 USE [master]
 GO
-
-/****** Object:  Database [db_restaurants]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Database [db_restaurants]    Script Date: 19.01.2022 08:33:37 ******/
 DROP DATABASE [db_restaurants]
 GO
-/****** Object:  Database [db_restaurants]    Script Date: 12.01.2022 09:37:42 ******/
+/****** Object:  Database [db_restaurants]    Script Date: 19.01.2022 08:33:37 ******/
 CREATE DATABASE [db_restaurants]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -149,16 +148,13 @@ CREATE DATABASE [db_restaurants]
 ( NAME = N'db_restaurants_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\db_restaurants_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
  WITH CATALOG_COLLATION = DATABASE_DEFAULT
 GO
-
 ALTER DATABASE [db_restaurants] SET COMPATIBILITY_LEVEL = 150
 GO
-
 IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
 begin
 EXEC [db_restaurants].[dbo].[sp_fulltext_database] @action = 'enable'
 end
 GO
-
 ALTER DATABASE [db_restaurants] SET ANSI_NULL_DEFAULT OFF 
 GO
 ALTER DATABASE [db_restaurants] SET ANSI_NULLS OFF 
@@ -225,7 +221,7 @@ ALTER DATABASE [db_restaurants] SET QUERY_STORE = OFF
 GO
 USE [db_restaurants]
 GO
-/****** Object:  Table [dbo].[allergens]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[allergens]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -240,7 +236,7 @@ CREATE TABLE [dbo].[allergens](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[dish_has_allergen]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[dish_has_allergen]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -255,7 +251,7 @@ CREATE TABLE [dbo].[dish_has_allergen](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[dish_has_ingredient]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[dish_has_ingredient]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -270,7 +266,7 @@ CREATE TABLE [dbo].[dish_has_ingredient](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[dishes]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[dishes]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -288,7 +284,7 @@ CREATE TABLE [dbo].[dishes](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[dishes_types]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[dishes_types]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -302,7 +298,7 @@ CREATE TABLE [dbo].[dishes_types](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ingredients]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[ingredients]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -319,7 +315,7 @@ CREATE TABLE [dbo].[ingredients](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[locations]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[locations]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -334,7 +330,7 @@ CREATE TABLE [dbo].[locations](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[measurement_units]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[measurement_units]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -348,7 +344,7 @@ CREATE TABLE [dbo].[measurement_units](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[order_detail_has_ingredient]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[order_detail_has_ingredient]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -363,7 +359,7 @@ CREATE TABLE [dbo].[order_detail_has_ingredient](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[order_details]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[order_details]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -379,7 +375,7 @@ CREATE TABLE [dbo].[order_details](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[order_has_order_detail]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[order_has_order_detail]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -390,7 +386,7 @@ CREATE TABLE [dbo].[order_has_order_detail](
 	[oder_detail_id] [int] NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[orders]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[orders]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -406,7 +402,7 @@ CREATE TABLE [dbo].[orders](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[restaurant_has_dish]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[restaurant_has_dish]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -439,7 +435,7 @@ CREATE TABLE [dbo].[restaurant_has_sale](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[restaurant_has_user]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[restaurant_has_user]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -454,7 +450,7 @@ CREATE TABLE [dbo].[restaurant_has_user](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[restaurant_hast_type_of_restaurant]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[restaurant_hast_type_of_restaurant]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -469,7 +465,7 @@ CREATE TABLE [dbo].[restaurant_hast_type_of_restaurant](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[restaurant_types]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[restaurant_types]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -484,7 +480,7 @@ CREATE TABLE [dbo].[restaurant_types](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[restaurants]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[restaurants]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -501,7 +497,7 @@ CREATE TABLE [dbo].[restaurants](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[reviews]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[reviews]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -520,7 +516,7 @@ CREATE TABLE [dbo].[reviews](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[sales]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[sales]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -534,7 +530,7 @@ CREATE TABLE [dbo].[sales](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[users]    Script Date: 27.12.2021 16:42:56 ******/
+/****** Object:  Table [dbo].[users]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON

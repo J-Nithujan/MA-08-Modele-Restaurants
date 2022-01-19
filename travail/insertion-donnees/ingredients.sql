@@ -1,0 +1,240 @@
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (1,'viverra.',36,'5',8),
+  (2,'leo,',38,'21',4),
+  (3,'at',3,'6',2),
+  (4,'mauris',3,'45',9),
+  (5,'molestie',24,'32',2),
+  (6,'non,',34,'47',8),
+  (7,'neque',11,'47',7),
+  (8,'et',38,'40',9),
+  (9,'vulputate',29,'5',4),
+  (10,'tellus,',44,'23',4);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (11,'lobortis',7,'7',8),
+  (12,'at',43,'31',5),
+  (13,'molestie',14,'16',6),
+  (14,'ipsum.',48,'36',8),
+  (15,'nonummy.',20,'31',9),
+  (16,'ipsum.',32,'26',10),
+  (17,'nostra,',6,'2',8),
+  (18,'Mauris',7,'18',3),
+  (19,'diam',4,'7',7),
+  (20,'at,',39,'16',2);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (21,'erat',49,'32',4),
+  (22,'fringilla',7,'47',5),
+  (23,'eros.',40,'32',2),
+  (24,'ullamcorper.',6,'41',7),
+  (25,'tristique',11,'18',2),
+  (26,'egestas.',29,'50',6),
+  (27,'sed',17,'2',8),
+  (28,'sem,',37,'3',6),
+  (29,'egestas',10,'22',6),
+  (30,'fermentum',4,'17',3);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (31,'a',24,'34',7),
+  (32,'orci.',2,'2',4),
+  (33,'vehicula.',17,'42',8),
+  (34,'Class',23,'24',7),
+  (35,'tempor',33,'20',1),
+  (36,'justo',23,'34',6),
+  (37,'gravida',34,'27',8),
+  (38,'ipsum',14,'48',3),
+  (39,'ligula.',26,'35',4),
+  (40,'at,',21,'47',6);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (41,'mauris',22,'43',2),
+  (42,'molestie',30,'29',7),
+  (43,'orci.',46,'35',8),
+  (44,'Nullam',46,'36',6),
+  (45,'at,',44,'6',2),
+  (46,'eget',30,'43',9),
+  (47,'aliquam',2,'49',6),
+  (48,'tortor.',36,'5',6),
+  (49,'tellus.',5,'25',7),
+  (50,'arcu.',12,'42',4);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (51,'lorem',3,'17',1),
+  (52,'Suspendisse',8,'21',7),
+  (53,'tempor',7,'19',1),
+  (54,'Nam',40,'14',7),
+  (55,'libero',41,'23',6),
+  (56,'Quisque',7,'46',3),
+  (57,'rhoncus.',21,'11',4),
+  (58,'eget',1,'15',8),
+  (59,'risus,',5,'26',3),
+  (60,'mi',9,'45',3);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (61,'metus',8,'28',6),
+  (62,'nascetur',34,'13',8),
+  (63,'ultricies',11,'7',4),
+  (64,'senectus',35,'7',10),
+  (65,'dui',36,'19',6),
+  (66,'Duis',14,'16',6),
+  (67,'ligula',7,'10',8),
+  (68,'fringilla',15,'13',3),
+  (69,'sit',43,'4',7),
+  (70,'eu',27,'15',7);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (71,'euismod',26,'38',3),
+  (72,'Vestibulum',16,'31',10),
+  (73,'Nullam',5,'4',4),
+  (74,'adipiscing',46,'36',4),
+  (75,'bibendum',6,'34',8),
+  (76,'aliquam',21,'26',1),
+  (77,'sit',28,'38',6),
+  (78,'ultricies',26,'14',5),
+  (79,'ac',3,'5',8),
+  (80,'ut',8,'21',2);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (81,'sociis',21,'12',7),
+  (82,'aliquam',44,'18',5),
+  (83,'elit',24,'37',6),
+  (84,'imperdiet',31,'22',8),
+  (85,'justo',5,'34',2),
+  (86,'magna.',10,'40',9),
+  (87,'magna.',45,'31',9),
+  (88,'aliquam',43,'7',9),
+  (89,'faucibus.',18,'30',2),
+  (90,'hendrerit',22,'33',7);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (91,'egestas,',34,'1',9),
+  (92,'sodales',45,'15',7),
+  (93,'vehicula',34,'5',4),
+  (94,'nonummy',27,'43',3),
+  (95,'odio',45,'40',5),
+  (96,'metus.',39,'48',1),
+  (97,'sem',45,'23',2),
+  (98,'ipsum',3,'40',1),
+  (99,'eleifend,',37,'1',9),
+  (100,'eu',14,'38',4);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (101,'Donec',7,'16',5),
+  (102,'lorem',2,'38',7),
+  (103,'morbi',30,'36',1),
+  (104,'eu',20,'14',9),
+  (105,'Donec',11,'31',10),
+  (106,'enim.',38,'20',7),
+  (107,'nec',18,'17',10),
+  (108,'Quisque',7,'30',7),
+  (109,'natoque',26,'13',10),
+  (110,'accumsan',38,'5',10);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (111,'gravida',15,'8',2),
+  (112,'Integer',5,'48',9),
+  (113,'adipiscing.',10,'36',8),
+  (114,'tristique',8,'22',8),
+  (115,'lacinia',37,'33',4),
+  (116,'Nulla',17,'35',5),
+  (117,'sed,',30,'42',9),
+  (118,'egestas.',48,'40',2),
+  (119,'In',44,'41',8),
+  (120,'magna',48,'15',5);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (121,'libero',7,'9',5),
+  (122,'diam.',13,'48',10),
+  (123,'tincidunt',24,'10',1),
+  (124,'nulla.',45,'49',10),
+  (125,'sapien.',43,'44',1),
+  (126,'Morbi',9,'17',3),
+  (127,'molestie',24,'4',7),
+  (128,'sit',15,'5',3),
+  (129,'ornare,',41,'36',1),
+  (130,'Fusce',9,'28',7);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (131,'ligula',5,'49',2),
+  (132,'neque',35,'33',10),
+  (133,'enim.',32,'49',5),
+  (134,'penatibus',7,'4',1),
+  (135,'dictum',33,'41',3),
+  (136,'Aliquam',15,'4',9),
+  (137,'erat',49,'20',4),
+  (138,'est.',6,'16',4),
+  (139,'sed',9,'34',6),
+  (140,'magna.',26,'2',5);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (141,'Quisque',3,'25',3),
+  (142,'sed',40,'47',6),
+  (143,'ipsum.',28,'15',6),
+  (144,'enim.',37,'32',7),
+  (145,'egestas.',42,'11',5),
+  (146,'amet',39,'50',3),
+  (147,'felis',18,'48',3),
+  (148,'eu,',43,'15',8),
+  (149,'Nulla',31,'26',5),
+  (150,'eros',7,'10',1);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (151,'amet,',32,'42',6),
+  (152,'ornare',17,'23',6),
+  (153,'mauris.',20,'22',7),
+  (154,'vel',42,'6',10),
+  (155,'sit',3,'34',3),
+  (156,'blandit',47,'4',1),
+  (157,'a,',31,'8',5),
+  (158,'pede',9,'4',7),
+  (159,'ut,',49,'29',3),
+  (160,'mattis.',9,'7',8);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (161,'sociis',42,'46',8),
+  (162,'et',23,'33',8),
+  (163,'dictum.',47,'34',3),
+  (164,'consectetuer',40,'16',2),
+  (165,'eu',34,'19',3),
+  (166,'Donec',24,'34',4),
+  (167,'dictum',14,'6',3),
+  (168,'Suspendisse',26,'19',4),
+  (169,'rutrum',10,'17',8),
+  (170,'Nulla',9,'26',4);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (171,'scelerisque',6,'16',9),
+  (172,'magna',37,'47',7),
+  (173,'enim.',19,'17',7),
+  (174,'tellus',17,'22',8),
+  (175,'et',19,'36',6),
+  (176,'luctus,',23,'24',8),
+  (177,'non',43,'8',5),
+  (178,'tempus,',32,'50',10),
+  (179,'quam.',28,'15',8),
+  (180,'nisi',37,'4',1);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (181,'fermentum',10,'19',7),
+  (182,'scelerisque',22,'18',9),
+  (183,'nisi.',19,'2',3),
+  (184,'Duis',4,'32',7),
+  (185,'dapibus',14,'26',9),
+  (186,'vel',35,'42',7),
+  (187,'in',21,'47',4),
+  (188,'at,',11,'25',4),
+  (189,'per',23,'39',6),
+  (190,'urna',49,'47',4);
+INSERT INTO [ingredients] (id,name,quantity,price,measurement_unit_id)
+VALUES
+  (191,'dui.',36,'49',5),
+  (192,'non,',12,'27',9),
+  (193,'odio',6,'10',6),
+  (194,'Pellentesque',11,'34',1),
+  (195,'non',5,'45',3),
+  (196,'Duis',47,'36',5),
+  (197,'nulla.',35,'20',6),
+  (198,'dictum',2,'28',3),
+  (199,'eu',9,'24',5),
+  (200,'nibh',12,'9',8);

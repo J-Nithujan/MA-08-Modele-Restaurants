@@ -1,0 +1,120 @@
+INSERT INTO [myTable] (id,city,ZIP)
+VALUES
+  (1,'arcu.',1000),
+  (2,'amet,',1001),
+  (3,'ut',1002),
+  (4,'mattis.',1003),
+  (5,'natoque',1004),
+  (6,'dolor',1005),
+  (7,'ac,',1006),
+  (8,'vulputate',1007),
+  (9,'mollis',1008),
+  (10,'sollicitudin',1009);
+INSERT INTO [myTable] (id,city,ZIP)
+VALUES
+  (11,'turpis',1010),
+  (12,'nec',1011),
+  (13,'dolor',1012),
+  (14,'elit.',1013),
+  (15,'lobortis',1014),
+  (16,'nulla.',1015),
+  (17,'dui',1016),
+  (18,'Nullam',1017),
+  (19,'amet',1018),
+  (20,'sodales',1019);
+INSERT INTO [myTable] (id,city,ZIP)
+VALUES
+  (21,'elit',1020),
+  (22,'tincidunt.',1021),
+  (23,'malesuada',1022),
+  (24,'fringilla',1023),
+  (25,'gravida',1024),
+  (26,'enim,',1025),
+  (27,'porttitor',1026),
+  (28,'non',1027),
+  (29,'suscipit,',1028),
+  (30,'Proin',1029);
+INSERT INTO [myTable] (id,city,ZIP)
+VALUES
+  (31,'id',1030),
+  (32,'dui',1031),
+  (33,'neque',1032),
+  (34,'neque.',1033),
+  (35,'diam.',1034),
+  (36,'arcu.',1035),
+  (37,'sodales.',1036),
+  (38,'nunc',1037),
+  (39,'erat.',1038),
+  (40,'convallis',1039);
+INSERT INTO [myTable] (id,city,ZIP)
+VALUES
+  (41,'blandit',1040),
+  (42,'consequat',1041),
+  (43,'Nunc',1042),
+  (44,'scelerisque',1043),
+  (45,'rutrum.',1044),
+  (46,'mi',1045),
+  (47,'dui',1046),
+  (48,'justo.',1047),
+  (49,'fermentum',1048),
+  (50,'sem',1049);
+INSERT INTO [myTable] (id,city,ZIP)
+VALUES
+  (51,'non,',1050),
+  (52,'id',1051),
+  (53,'ante',1052),
+  (54,'eget',1053),
+  (55,'Cras',1054),
+  (56,'mi',1055),
+  (57,'sem',1056),
+  (58,'Sed',1057),
+  (59,'enim.',1058),
+  (60,'congue,',1059);
+INSERT INTO [myTable] (id,city,ZIP)
+VALUES
+  (61,'taciti',1060),
+  (62,'Nam',1061),
+  (63,'at',1062),
+  (64,'ut',1063),
+  (65,'ut',1064),
+  (66,'libero',1065),
+  (67,'lobortis',1066),
+  (68,'sed',1067),
+  (69,'velit.',1068),
+  (70,'malesuada',1069);
+INSERT INTO [myTable] (id,city,ZIP)
+VALUES
+  (71,'id',1070),
+  (72,'placerat',1071),
+  (73,'ut,',1072),
+  (74,'pellentesque,',1073),
+  (75,'lectus',1074),
+  (76,'at,',1075),
+  (77,'metus',1076),
+  (78,'Sed',1077),
+  (79,'lobortis,',1078),
+  (80,'dolor',1079);
+INSERT INTO [myTable] (id,city,ZIP)
+VALUES
+  (81,'ipsum',1080),
+  (82,'lacus.',1081),
+  (83,'vestibulum',1082),
+  (84,'nulla.',1083),
+  (85,'malesuada',1084),
+  (86,'quam',1085),
+  (87,'a',1086),
+  (88,'facilisis',1087),
+  (89,'fames',1088),
+  (90,'odio',1089);
+INSERT INTO [myTable] (id,city,ZIP)
+VALUES
+  (91,'sem.',1090),
+  (92,'at',1091),
+  (93,'placerat',1092),
+  (94,'lectus',1093),
+  (95,'mi',1094),
+  (96,'sodales',1095),
+  (97,'et',1096),
+  (98,'felis',1097),
+  (99,'molestie',1098),
+  (100,'Integer',1099);
