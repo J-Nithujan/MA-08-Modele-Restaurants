@@ -14,7 +14,7 @@
  * we considered this tool to be great at checking that our assumptions
  * were correct.
  * For instance: checking the data insertion sequence,
- * 		checking that the model does not loop, etc.
+ *      checking that the model does not loop, etc.
  * 
  */
 
@@ -239,12 +239,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[allergens](
-	[id] [int] NOT NULL,
-	[name] [varchar](60) NOT NULL,
-	[description] [varchar](255) NULL,
+    [id] [int] NOT NULL,
+    [name] [varchar](60) NOT NULL,
+    [description] [varchar](255) NULL,
  CONSTRAINT [PK_allergens] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -254,12 +254,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[dish_has_allergen](
-	[id] [int] NOT NULL,
-	[dish_id] [int] NULL,
-	[allergen_id] [int] NULL,
+    [id] [int] NOT NULL,
+    [dish_id] [int] NULL,
+    [allergen_id] [int] NULL,
  CONSTRAINT [PK_dish_has_allergen] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -269,12 +269,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[dish_has_ingredient](
-	[id] [int] NOT NULL,
-	[dish_id] [int] NULL,
-	[ingredient_id] [int] NULL,
+    [id] [int] NOT NULL,
+    [dish_id] [int] NULL,
+    [ingredient_id] [int] NULL,
  CONSTRAINT [PK_dish_has_ingredient] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -284,15 +284,15 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[dishes](
-	[id] [int] NOT NULL,
-	[name] [varchar](80) NOT NULL,
-	[description] [varchar](255) NULL,
-	[base_price] [decimal](6, 2) NULL,
-	[sale_price] [decimal](6, 2) NULL,
-	[dish_type_id] [int] NOT NULL,
+    [id] [int] NOT NULL,
+    [name] [varchar](80) NOT NULL,
+    [description] [varchar](255) NULL,
+    [base_price] [decimal](6, 2) NULL,
+    [sale_price] [decimal](6, 2) NULL,
+    [dish_type_id] [int] NOT NULL,
  CONSTRAINT [PK_dishes] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -302,11 +302,11 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[dishes_types](
-	[id] [int] NOT NULL,
-	[name] [varchar](40) NOT NULL,
+    [id] [int] NOT NULL,
+    [name] [varchar](40) NOT NULL,
  CONSTRAINT [PK_dishes_types] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -316,14 +316,14 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[ingredients](
-	[id] [int] NOT NULL,
-	[name] [varchar](60) NOT NULL,
-	[quantity] [int] NULL,
-	[price] [decimal](6, 2) NOT NULL,
-	[measurement_unit_id] [int] NULL,
+    [id] [int] NOT NULL,
+    [name] [varchar](60) NOT NULL,
+    [quantity] [int] NULL,
+    [price] [decimal](6, 2) NOT NULL,
+    [measurement_unit_id] [int] NULL,
  CONSTRAINT [PK_ingredients] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -333,12 +333,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[locations](
-	[id] [int] NOT NULL,
-	[city] [varchar](60) NOT NULL,
-	[ZIP] [int] NOT NULL,
+    [id] [int] NOT NULL,
+    [city] [varchar](60) NOT NULL,
+    [ZIP] [int] NOT NULL,
  CONSTRAINT [PK_locations] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -348,11 +348,11 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[measurement_units](
-	[id] [int] NOT NULL,
-	[name] [varchar](45) NOT NULL,
+    [id] [int] NOT NULL,
+    [name] [varchar](45) NOT NULL,
  CONSTRAINT [PK_measurement_units] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -362,12 +362,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[order_detail_has_ingredient](
-	[id] [int] NOT NULL,
-	[order_detail_id] [int] NULL,
-	[ingredient_id] [int] NULL,
+    [id] [int] NOT NULL,
+    [order_detail_id] [int] NULL,
+    [ingredient_id] [int] NULL,
  CONSTRAINT [PK_order_detail_has_ingredient] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -377,13 +377,13 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[order_details](
-	[id] [int] NOT NULL,
-	[reference] [varchar](60) NOT NULL,
-	[dish_id] [int] NULL,
-	[order_id] [int] NULL,
+    [id] [int] NOT NULL,
+    [reference] [varchar](60) NOT NULL,
+    [dish_id] [int] NULL,
+    [order_id] [int] NULL,
  CONSTRAINT [PK_order_details] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -393,13 +393,13 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[orders](
-	[id] [int] NOT NULL,
-	[order_number] [int] NOT NULL,
-	[date] [datetime] NULL,
-	[user_id] [int] NULL,
+    [id] [int] NOT NULL,
+    [order_number] [int] NOT NULL,
+    [date] [datetime] NULL,
+    [user_id] [int] NULL,
  CONSTRAINT [PK_orders] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -409,12 +409,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[restaurant_has_dish](
-	[id] [int] NOT NULL,
-	[restaurant_id] [int] NULL,
-	[dish_id] [int] NULL,
+    [id] [int] NOT NULL,
+    [restaurant_id] [int] NULL,
+    [dish_id] [int] NULL,
  CONSTRAINT [PK_restaurant_has_dish] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -424,15 +424,15 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[restaurant_has_sale](
-	[id] [int] NOT NULL,
-	[restaurant_id] [int] NULL,
-	[sale_id] [int] NULL,
-	[percentage] [int] NULL,
-	[since] [datetime] NULL,
-	[until] [datetime] NULL,
+    [id] [int] NOT NULL,
+    [restaurant_id] [int] NULL,
+    [sale_id] [int] NULL,
+    [percentage] [int] NULL,
+    [since] [datetime] NULL,
+    [until] [datetime] NULL,
  CONSTRAINT [PK_restaurant_has_sale] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -442,12 +442,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[restaurant_has_user](
-	[id] [int] NOT NULL,
-	[user_id] [int] NULL,
-	[restaurant_id] [int] NULL,
+    [id] [int] NOT NULL,
+    [user_id] [int] NULL,
+    [restaurant_id] [int] NULL,
  CONSTRAINT [PK_restaurant_has_user] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -457,12 +457,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[restaurant_has_type_of_restaurant](
-	[id] [int] NOT NULL,
-	[restaurant_id] [int] NOT NULL,
-	[restaurant_type_id] [int] NOT NULL,
+    [id] [int] NOT NULL,
+    [restaurant_id] [int] NOT NULL,
+    [restaurant_type_id] [int] NOT NULL,
  CONSTRAINT [PK_restaurant_has_type_of_restaurant] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -472,12 +472,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[restaurant_types](
-	[id] [int] NOT NULL,
-	[name] [varchar](60) NOT NULL,
-	[description] [varchar](255) NOT NULL,
+    [id] [int] NOT NULL,
+    [name] [varchar](60) NOT NULL,
+    [description] [varchar](255) NOT NULL,
  CONSTRAINT [PK_restaurant_types] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -487,14 +487,14 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[restaurants](
-	[id] [int] NOT NULL,
-	[name] [varchar](45) NOT NULL,
-	[road] [varchar](45) NOT NULL,
-	[regular_schedule] [text] NULL,
-	[location_id] [int] NOT NULL,
+    [id] [int] NOT NULL,
+    [name] [varchar](45) NOT NULL,
+    [road] [varchar](45) NOT NULL,
+    [regular_schedule] [text] NULL,
+    [location_id] [int] NOT NULL,
  CONSTRAINT [PK_restaurants] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
@@ -504,16 +504,16 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[reviews](
-	[id] [int] NOT NULL,
-	[title] [varchar](60) NOT NULL,
-	[publication_date] [datetime] NOT NULL,
-	[description] [text] NULL,
-	[rating] [int] NOT NULL,
-	[restaurant_id] [int] NOT NULL,
-	[user_id] [int] NOT NULL,
+    [id] [int] NOT NULL,
+    [title] [varchar](60) NOT NULL,
+    [publication_date] [datetime] NOT NULL,
+    [description] [text] NULL,
+    [rating] [int] NOT NULL,
+    [restaurant_id] [int] NOT NULL,
+    [user_id] [int] NOT NULL,
  CONSTRAINT [PK_reviews] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
@@ -523,11 +523,11 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[sales](
-	[id] [int] NOT NULL,
-	[name] [varchar](60) NOT NULL,
+    [id] [int] NOT NULL,
+    [name] [varchar](60) NOT NULL,
  CONSTRAINT [PK_sales] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -537,17 +537,17 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[users](
-	[id] [int] NOT NULL,
-	[email] [varchar](254) NOT NULL,
-	[firstname] [varchar](60) NULL,
-	[lastname] [varchar](60) NULL,
-	[password] [varchar](100) NULL,
-	[birthdate] [date] NULL,
-	[road] [varchar](45) NULL,
-	[location_id] [int] NULL,
+    [id] [int] NOT NULL,
+    [email] [varchar](254) NOT NULL,
+    [firstname] [varchar](60) NULL,
+    [lastname] [varchar](60) NULL,
+    [password] [varchar](100) NULL,
+    [birthdate] [date] NULL,
+    [road] [varchar](45) NULL,
+    [location_id] [int] NULL,
  CONSTRAINT [PK_users] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+    [id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO

@@ -22,14 +22,14 @@ INSERT [dbo].[users]
 INSERT [dbo].[restaurants]
 
 # ordre 3 validé
-INSERT [dbo].[reviews]
 INSERT [dbo].[dish_has_allergen]
-INSERT [dbo].[restaurant_has_dish]
+INSERT [dbo].[dish_has_ingredient]
 INSERT [dbo].[orders]
+INSERT [dbo].[restaurant_has_dish]
 INSERT [dbo].[restaurant_has_type_of_restaurant]
 INSERT [dbo].[restaurant_has_sale]
 INSERT [dbo].[restaurant_has_user]
-INSERT [dbo].[dish_has_ingredient]
+INSERT [dbo].[reviews]
 
 # ordre 3+ / 4 validé
 INSERT [dbo].[order_details]
