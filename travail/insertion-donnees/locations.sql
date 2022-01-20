@@ -1,4 +1,4 @@
-INSERT INTO [myTable] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (1,'pede',1000),
   (2,'quis',1001),
@@ -10,7 +10,7 @@ VALUES
   (8,'ridiculus',1007),
   (9,'consectetuer',1008),
   (10,'erat',1009);
-INSERT INTO [myTable] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (11,'nec',1010),
   (12,'mauris',1011),
@@ -22,7 +22,7 @@ VALUES
   (18,'tempus,',1017),
   (19,'iaculis,',1018),
   (20,'Ut',1019);
-INSERT INTO [myTable] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (21,'eu',1020),
   (22,'dui,',1021),
@@ -34,7 +34,7 @@ VALUES
   (28,'ultricies',1027),
   (29,'scelerisque',1028),
   (30,'Cras',1029);
-INSERT INTO [myTable] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (31,'mi.',1030),
   (32,'semper',1031),
@@ -46,7 +46,7 @@ VALUES
   (38,'Cras',1037),
   (39,'Proin',1038),
   (40,'libero.',1039);
-INSERT INTO [myTable] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (41,'neque.',1040),
   (42,'magnis',1041),
@@ -58,7 +58,7 @@ VALUES
   (48,'magna.',1047),
   (49,'at',1048),
   (50,'mi',1049);
-INSERT INTO [myTable] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (51,'ligula.',1050),
   (52,'Sed',1051),
@@ -70,7 +70,7 @@ VALUES
   (58,'eget,',1057),
   (59,'aliquam',1058),
   (60,'eu',1059);
-INSERT INTO [myTable] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (61,'nec,',1060),
   (62,'fames',1061),
@@ -82,7 +82,7 @@ VALUES
   (68,'lacus,',1067),
   (69,'diam',1068),
   (70,'semper',1069);
-INSERT INTO [myTable] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (71,'elit,',1070),
   (72,'ante.',1071),
@@ -94,7 +94,7 @@ VALUES
   (78,'pede.',1077),
   (79,'est',1078),
   (80,'adipiscing',1079);
-INSERT INTO [myTable] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (81,'Etiam',1080),
   (82,'montes,',1081),
@@ -106,7 +106,7 @@ VALUES
   (88,'eu',1087),
   (89,'augue',1088),
   (90,'neque.',1089);
-INSERT INTO [myTable] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (91,'nunc',1090),
   (92,'Nulla',1091),

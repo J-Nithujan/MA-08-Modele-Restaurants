@@ -1,4 +1,4 @@
-INSERT INTO [myTable] (id,name,description)
+INSERT INTO [dbo].[restaurant_types] (id,name,description)
 VALUES
   (1,'sit','nunc, ullamcorper eu, euismod ac, fermentum vel, mauris. Integer sem elit, pharetra ut,'),
   (2,'iaculis,','iaculis, lacus pede sagittis augue, eu tempor erat neque non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'),
@@ -10,7 +10,7 @@ VALUES
   (8,'mauris.','porta elit, a feugiat tellus'),
   (9,'Phasellus','id, erat. Etiam vestibulum massa rutrum magna. Cras convallis convallis dolor. Quisque tincidunt pede ac urna.'),
   (10,'eget,','Donec non justo. Proin non massa non ante bibendum ullamcorper. Duis cursus, diam');
-INSERT INTO [myTable] (id,name,description)
+INSERT INTO [dbo].[restaurant_types] (id,name,description)
 VALUES
   (11,'vulputate','eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris ipsum porta elit, a feugiat tellus lorem eu metus. In lorem. Donec elementum, lorem ut aliquam iaculis, lacus pede sagittis'),
   (12,'commodo','libero et tristique pellentesque, tellus sem'),
@@ -22,7 +22,7 @@ VALUES
   (18,'non,','enim. Etiam gravida molestie arcu. Sed eu nibh vulputate mauris sagittis placerat.'),
   (19,'Nullam','ut ipsum ac mi eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris ipsum porta elit, a feugiat tellus lorem eu metus. In lorem. Donec elementum, lorem ut'),
   (20,'id','turpis nec mauris blandit mattis. Cras eget nisi dictum augue malesuada malesuada. Integer id magna et ipsum');
-INSERT INTO [myTable] (id,name,description)
+INSERT INTO [dbo].[restaurant_types] (id,name,description)
 VALUES
   (21,'ac','ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi'),
   (22,'Ut','faucibus lectus, a sollicitudin orci sem eget massa. Suspendisse eleifend. Cras sed leo.'),
@@ -34,7 +34,7 @@ VALUES
   (28,'hendrerit','ac mi eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris'),
   (29,'iaculis,','Nullam scelerisque neque sed sem egestas blandit. Nam nulla magna, malesuada vel,'),
   (30,'lectus','varius ultrices, mauris ipsum porta elit, a feugiat tellus lorem eu metus. In lorem. Donec elementum,');
-INSERT INTO [myTable] (id,name,description)
+INSERT INTO [dbo].[restaurant_types] (id,name,description)
 VALUES
   (31,'ante.','lobortis, nisi nibh lacinia orci, consectetuer euismod est arcu ac orci. Ut semper pretium neque. Morbi quis urna. Nunc'),
   (32,'a','pharetra, felis eget varius ultrices, mauris ipsum porta elit, a feugiat tellus lorem eu metus. In lorem. Donec elementum,'),
@@ -46,7 +46,7 @@ VALUES
   (38,'nibh','nulla. Integer vulputate, risus a ultricies adipiscing, enim mi tempor lorem, eget mollis lectus pede et risus. Quisque libero lacus, varius et, euismod et, commodo at, libero.'),
   (39,'diam.','iaculis quis, pede. Praesent eu dui. Cum sociis natoque penatibus et magnis dis parturient montes,'),
   (40,'erat,','aliquam adipiscing lacus. Ut nec urna et arcu imperdiet ullamcorper. Duis at lacus. Quisque purus sapien, gravida non, sollicitudin a, malesuada id, erat. Etiam vestibulum massa');
-INSERT INTO [myTable] (id,name,description)
+INSERT INTO [dbo].[restaurant_types] (id,name,description)
 VALUES
   (41,'metus','eleifend vitae, erat. Vivamus nisi. Mauris nulla. Integer urna. Vivamus molestie dapibus ligula. Aliquam erat volutpat. Nulla dignissim. Maecenas'),
   (42,'amet','Donec nibh enim, gravida sit amet, dapibus id,'),

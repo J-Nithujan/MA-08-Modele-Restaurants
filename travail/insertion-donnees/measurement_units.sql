@@ -1,12 +1,7 @@
-INSERT INTO [myTable] (id,city)
+INSERT INTO [dbo].[measurement_units] (id,name)
 VALUES
-  (1,'eget'),
-  (2,'dictum'),
-  (3,'Nulla'),
-  (4,'In'),
-  (5,'eget'),
-  (6,'consectetuer'),
-  (7,'ut,'),
-  (8,'enim'),
-  (9,'elit,'),
-  (10,'sit');
+  (1,'cm'),
+  (2,'ml'),
+  (3,'g'),
+  (4,'cs'),
+  (5,'cc');

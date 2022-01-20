@@ -1,4 +1,4 @@
-INSERT INTO [myTable] (id,city)
+INSERT INTO [dbo].[sales] (id,name)
 VALUES
   (1,'ipsum'),
   (2,'volutpat.'),
@@ -10,7 +10,7 @@ VALUES
   (8,'lorem,'),
   (9,'vulputate'),
   (10,'ut');
-INSERT INTO [myTable] (id,city)
+INSERT INTO [dbo].[sales] (id,name)
 VALUES
   (11,'dictum'),
   (12,'ac'),
@@ -22,7 +22,7 @@ VALUES
   (18,'id'),
   (19,'nascetur'),
   (20,'facilisis');
-INSERT INTO [myTable] (id,city)
+INSERT INTO [dbo].[sales] (id,name)
 VALUES
   (21,'eros'),
   (22,'conubia'),
@@ -34,7 +34,7 @@ VALUES
   (28,'arcu'),
   (29,'non'),
   (30,'Aenean');
-INSERT INTO [myTable] (id,city)
+INSERT INTO [dbo].[sales] (id,name)
 VALUES
   (31,'tellus'),
   (32,'aliquet.'),
@@ -46,7 +46,7 @@ VALUES
   (38,'neque.'),
   (39,'sociis'),
   (40,'malesuada');
-INSERT INTO [myTable] (id,city)
+INSERT INTO [dbo].[sales] (id,name)
 VALUES
   (41,'nisl'),
   (42,'eu'),

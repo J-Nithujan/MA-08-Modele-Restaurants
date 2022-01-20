@@ -1,4 +1,4 @@
-INSERT INTO [myTable] (id,city)
+INSERT INTO [dbo].[dishes_types] (id,name)
 VALUES
   (1,'vitae'),
   (2,'mus.'),
@@ -10,7 +10,7 @@ VALUES
   (8,'eu'),
   (9,'Morbi'),
   (10,'dapibus');
-INSERT INTO [myTable] (id,city)
+INSERT INTO [dbo].[dishes_types] (id,name)
 VALUES
   (11,'euismod'),
   (12,'Pellentesque'),
@@ -22,7 +22,7 @@ VALUES
   (18,'placerat,'),
   (19,'et'),
   (20,'lobortis');
-INSERT INTO [myTable] (id,city)
+INSERT INTO [dbo].[dishes_types] (id,name)
 VALUES
   (21,'mattis'),
   (22,'ut'),
@@ -34,7 +34,7 @@ VALUES
   (28,'Proin'),
   (29,'elit'),
   (30,'sociis');
-INSERT INTO [myTable] (id,city)
+INSERT INTO [dbo].[dishes_types] (id,name)
 VALUES
   (31,'sollicitudin'),
   (32,'porttitor'),
@@ -46,7 +46,7 @@ VALUES
   (38,'semper'),
   (39,'Sed'),
   (40,'Vivamus');
-INSERT INTO [myTable] (id,city)
+INSERT INTO [dbo].[dishes_types] (id,name)
 VALUES
   (41,'Sed'),
   (42,'purus.'),

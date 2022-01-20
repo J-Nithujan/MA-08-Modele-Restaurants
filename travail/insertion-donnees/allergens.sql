@@ -1,4 +1,4 @@
-INSERT INTO [myTable] (id,name,description)
+INSERT INTO [dbo].[allergens] (id,name,description)
 VALUES
   (1,'ac','est mauris, rhoncus id, mollis nec, cursus a, enim. Suspendisse aliquet, sem ut cursus'),
   (2,'Etiam','erat volutpat. Nulla facilisis. Suspendisse commodo tincidunt nibh. Phasellus nulla. Integer'),
@@ -10,7 +10,7 @@ VALUES
   (8,'interdum','posuere vulputate, lacus. Cras interdum. Nunc sollicitudin commodo ipsum. Suspendisse non'),
   (9,'non,','nunc. Quisque ornare tortor at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare, lectus ante dictum mi, ac'),
   (10,'et','nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt');
-INSERT INTO [myTable] (id,name,description)
+INSERT INTO [dbo].[allergens] (id,name,description)
 VALUES
   (11,'commodo','ante bibendum ullamcorper. Duis cursus, diam at pretium aliquet, metus urna convallis erat, eget tincidunt dui'),
   (12,'aliquet','eros turpis non enim. Mauris quis turpis vitae purus gravida sagittis. Duis gravida. Praesent eu nulla at sem'),
@@ -22,7 +22,7 @@ VALUES
   (18,'sit','tristique neque venenatis lacus. Etiam bibendum fermentum metus. Aenean sed pede nec ante blandit viverra. Donec tempus, lorem fringilla ornare placerat,'),
   (19,'Praesent','amet ornare lectus justo eu arcu. Morbi sit amet massa. Quisque porttitor eros nec tellus. Nunc lectus pede, ultrices a, auctor'),
   (20,'egestas','Donec non justo. Proin non massa non ante bibendum ullamcorper. Duis cursus, diam at pretium aliquet, metus urna convallis erat, eget');
-INSERT INTO [myTable] (id,name,description)
+INSERT INTO [dbo].[allergens] (id,name,description)
 VALUES
   (21,'lobortis','hendrerit consectetuer, cursus et, magna. Praesent interdum ligula eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis'),
   (22,'aliquet','amet nulla. Donec non justo. Proin non massa non ante bibendum ullamcorper. Duis'),
@@ -34,7 +34,7 @@ VALUES
   (28,'Nulla','Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspendisse tristique neque venenatis'),
   (29,'parturient','augue, eu tempor erat neque non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fringilla'),
   (30,'ornare,','quis turpis vitae purus gravida sagittis. Duis gravida. Praesent eu nulla at sem molestie sodales. Mauris blandit');
-INSERT INTO [myTable] (id,name,description)
+INSERT INTO [dbo].[allergens] (id,name,description)
 VALUES
   (31,'dui,','gravida sit amet, dapibus id, blandit at, nisi. Cum sociis natoque penatibus et magnis dis parturient montes,'),
   (32,'malesuada','arcu imperdiet ullamcorper. Duis at lacus. Quisque purus sapien, gravida non, sollicitudin a, malesuada id, erat. Etiam vestibulum massa rutrum magna. Cras convallis convallis'),
@@ -46,7 +46,7 @@ VALUES
   (38,'tortor','scelerisque sed, sapien. Nunc pulvinar arcu et pede. Nunc sed orci lobortis augue scelerisque mollis. Phasellus libero mauris, aliquam eu, accumsan sed, facilisis'),
   (39,'Nunc','hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac'),
   (40,'vel','ultrices a, auctor non, feugiat nec, diam. Duis mi enim, condimentum eget, volutpat ornare, facilisis eget, ipsum. Donec sollicitudin adipiscing');
-INSERT INTO [myTable] (id,name,description)
+INSERT INTO [dbo].[allergens] (id,name,description)
 VALUES
   (41,'turpis.','vestibulum, neque sed dictum eleifend, nunc risus varius orci, in consequat enim diam vel arcu. Curabitur ut odio vel'),
   (42,'egestas','per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac'),
