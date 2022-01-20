@@ -8,9 +8,9 @@ ALTER TABLE [dbo].[reviews] DROP CONSTRAINT [FK_reviews_restaurants]
 GO
 ALTER TABLE [dbo].[restaurants] DROP CONSTRAINT [FK_restaurants_locations]
 GO
-ALTER TABLE [dbo].[restaurant_hast_type_of_restaurant] DROP CONSTRAINT [FK_restaurant_hast_type_of_restaurant_restaurants]
+ALTER TABLE [dbo].[restaurant_has_type_of_restaurant] DROP CONSTRAINT [FK_restaurant_has_type_of_restaurant_restaurants]
 GO
-ALTER TABLE [dbo].[restaurant_hast_type_of_restaurant] DROP CONSTRAINT [FK_restaurant_hast_type_of_restaurant_restaurant_types]
+ALTER TABLE [dbo].[restaurant_has_type_of_restaurant] DROP CONSTRAINT [FK_restaurant_has_type_of_restaurant_restaurant_types]
 GO
 ALTER TABLE [dbo].[restaurant_has_user] DROP CONSTRAINT [FK_restaurant_has_user_users]
 GO
@@ -70,9 +70,9 @@ GO
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_types]') AND type in (N'U'))
 DROP TABLE [dbo].[restaurant_types]
 GO
-/****** Object:  Table [dbo].[restaurant_hast_type_of_restaurant]    Script Date: 19.01.2022 08:33:37 ******/
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_hast_type_of_restaurant]') AND type in (N'U'))
-DROP TABLE [dbo].[restaurant_hast_type_of_restaurant]
+/****** Object:  Table [dbo].[restaurant_has_type_of_restaurant]    Script Date: 19.01.2022 08:33:37 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_has_type_of_restaurant]') AND type in (N'U'))
+DROP TABLE [dbo].[restaurant_has_type_of_restaurant]
 GO
 /****** Object:  Table [dbo].[restaurant_has_user]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[restaurant_has_user]') AND type in (N'U'))
@@ -450,16 +450,16 @@ CREATE TABLE [dbo].[restaurant_has_user](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[restaurant_hast_type_of_restaurant]    Script Date: 19.01.2022 08:33:37 ******/
+/****** Object:  Table [dbo].[restaurant_has_type_of_restaurant]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[restaurant_hast_type_of_restaurant](
+CREATE TABLE [dbo].[restaurant_has_type_of_restaurant](
 	[id] [int] NOT NULL,
 	[restaurant_id] [int] NOT NULL,
 	[restaurant_type_id] [int] NOT NULL,
- CONSTRAINT [PK_restaurant_hast_type_of_restaurant] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_restaurant_has_type_of_restaurant] PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
@@ -645,15 +645,15 @@ REFERENCES [dbo].[users] ([id])
 GO
 ALTER TABLE [dbo].[restaurant_has_user] CHECK CONSTRAINT [FK_restaurant_has_user_users]
 GO
-ALTER TABLE [dbo].[restaurant_hast_type_of_restaurant]  WITH CHECK ADD  CONSTRAINT [FK_restaurant_hast_type_of_restaurant_restaurant_types] FOREIGN KEY([restaurant_type_id])
+ALTER TABLE [dbo].[restaurant_has_type_of_restaurant]  WITH CHECK ADD  CONSTRAINT [FK_restaurant_has_type_of_restaurant_restaurant_types] FOREIGN KEY([restaurant_type_id])
 REFERENCES [dbo].[restaurant_types] ([id])
 GO
-ALTER TABLE [dbo].[restaurant_hast_type_of_restaurant] CHECK CONSTRAINT [FK_restaurant_hast_type_of_restaurant_restaurant_types]
+ALTER TABLE [dbo].[restaurant_has_type_of_restaurant] CHECK CONSTRAINT [FK_restaurant_has_type_of_restaurant_restaurant_types]
 GO
-ALTER TABLE [dbo].[restaurant_hast_type_of_restaurant]  WITH CHECK ADD  CONSTRAINT [FK_restaurant_hast_type_of_restaurant_restaurants] FOREIGN KEY([restaurant_id])
+ALTER TABLE [dbo].[restaurant_has_type_of_restaurant]  WITH CHECK ADD  CONSTRAINT [FK_restaurant_has_type_of_restaurant_restaurants] FOREIGN KEY([restaurant_id])
 REFERENCES [dbo].[restaurants] ([id])
 GO
-ALTER TABLE [dbo].[restaurant_hast_type_of_restaurant] CHECK CONSTRAINT [FK_restaurant_hast_type_of_restaurant_restaurants]
+ALTER TABLE [dbo].[restaurant_has_type_of_restaurant] CHECK CONSTRAINT [FK_restaurant_has_type_of_restaurant_restaurants]
 GO
 ALTER TABLE [dbo].[restaurants]  WITH CHECK ADD  CONSTRAINT [FK_restaurants_locations] FOREIGN KEY([location_id])
 REFERENCES [dbo].[locations] ([id])
