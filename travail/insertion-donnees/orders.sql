@@ -1,4 +1,4 @@
-INSERT INTO [users] (id,order_number,date,user_id,sale_id)
+INSERT INTO [dbo].[orders] (id,order_number,date,user_id,sale_id)
 VALUES
   (1,100,'2022-09-06 12:20:46',237,39),
   (2,101,'2021-04-08 03:59:35',255,23),
@@ -10,7 +10,7 @@ VALUES
   (8,107,'2022-01-22 06:04:35',288,32),
   (9,108,'2021-03-11 07:19:28',230,17),
   (10,109,'2021-11-06 02:54:41',289,37);
-INSERT INTO [users] (id,order_number,date,user_id,sale_id)
+INSERT INTO [dbo].[orders] (id,order_number,date,user_id,sale_id)
 VALUES
   (11,110,'2022-09-29 03:03:21',252,17),
   (12,111,'2021-10-20 12:37:27',201,37),

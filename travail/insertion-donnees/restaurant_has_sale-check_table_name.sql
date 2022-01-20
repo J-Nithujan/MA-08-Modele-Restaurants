@@ -1,4 +1,4 @@
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (1,250,14,7,'2021-12-02 08:28:21','2021-01-18 11:53:10'),
   (2,145,40,8,'2021-12-05 04:46:01','2021-01-06 12:31:57'),
@@ -10,7 +10,7 @@ VALUES
   (8,128,22,5,'2021-12-09 06:17:57','2021-01-29 01:55:13'),
   (9,292,37,9,'2021-12-25 11:18:41','2021-01-16 10:23:15'),
   (10,168,20,7,'2021-12-14 10:13:24','2021-01-09 11:45:45');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (11,204,38,9,'2022-01-01 10:03:57','2021-01-28 10:11:14'),
   (12,97,31,1,'2021-12-24 05:55:18','2021-01-29 09:44:42'),
@@ -22,7 +22,7 @@ VALUES
   (18,87,43,7,'2021-12-11 06:17:58','2021-01-04 09:41:49'),
   (19,186,20,0,'2021-12-06 05:01:55','2021-01-30 12:55:27'),
   (20,91,35,7,'2021-12-28 05:21:25','2021-01-09 08:37:47');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (21,2,32,7,'2021-12-08 01:55:33','2021-01-04 10:26:02'),
   (22,155,43,7,'2021-12-16 01:34:33','2021-01-13 09:02:13'),
@@ -34,7 +34,7 @@ VALUES
   (28,29,29,7,'2021-12-21 06:36:31','2021-01-11 03:59:15'),
   (29,59,31,2,'2021-12-02 12:30:37','2021-01-17 10:15:04'),
   (30,124,43,10,'2021-12-18 03:05:02','2021-01-25 03:11:14');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (31,245,11,8,'2021-12-16 07:58:29','2021-01-21 05:22:00'),
   (32,12,6,9,'2021-12-21 10:38:18','2021-01-19 06:41:10'),
@@ -46,7 +46,7 @@ VALUES
   (38,111,24,6,'2021-12-19 09:41:59','2021-01-18 05:28:12'),
   (39,94,9,4,'2021-12-26 11:17:52','2021-01-28 10:17:33'),
   (40,288,8,6,'2021-12-24 10:57:31','2021-01-17 09:23:39');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (41,83,7,5,'2021-12-21 10:11:34','2021-01-18 10:53:24'),
   (42,38,29,10,'2021-12-19 02:03:31','2021-01-15 06:57:15'),
@@ -58,7 +58,7 @@ VALUES
   (48,180,42,2,'2021-12-17 01:07:55','2021-01-07 11:42:28'),
   (49,230,22,1,'2021-12-21 08:54:53','2021-01-30 10:26:08'),
   (50,75,11,7,'2021-12-15 04:09:18','2021-01-09 04:08:38');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (51,84,40,9,'2021-12-03 07:30:29','2021-01-22 09:50:28'),
   (52,281,34,5,'2021-12-27 08:45:47','2021-01-29 07:14:29'),
@@ -70,7 +70,7 @@ VALUES
   (58,228,25,8,'2021-12-25 11:10:10','2021-01-06 12:57:00'),
   (59,207,15,6,'2021-12-25 05:19:02','2021-01-10 08:09:38'),
   (60,248,32,4,'2021-12-06 08:18:28','2021-01-10 12:27:54');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (61,220,20,10,'2021-12-30 10:00:12','2021-01-11 07:12:02'),
   (62,176,34,1,'2021-12-29 02:50:17','2021-01-06 05:02:18'),
@@ -82,7 +82,7 @@ VALUES
   (68,242,43,3,'2021-12-31 08:50:12','2021-01-19 07:26:34'),
   (69,201,28,6,'2021-12-12 10:11:25','2021-01-07 07:04:45'),
   (70,218,20,10,'2021-12-15 11:19:19','2021-01-24 06:07:09');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (71,110,39,7,'2021-12-11 10:59:08','2021-01-15 10:34:39'),
   (72,11,25,8,'2021-12-06 11:42:29','2021-01-13 01:43:57'),
@@ -94,7 +94,7 @@ VALUES
   (78,291,17,0,'2021-12-30 01:46:09','2021-01-25 09:43:43'),
   (79,124,39,8,'2021-12-25 11:55:34','2021-01-20 01:02:05'),
   (80,228,27,5,'2021-12-12 05:26:54','2021-01-08 05:28:01');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (81,185,43,3,'2021-12-15 07:25:25','2021-01-17 05:15:09'),
   (82,24,16,8,'2021-12-18 04:30:57','2021-01-30 04:28:16'),
@@ -106,7 +106,7 @@ VALUES
   (88,85,13,6,'2021-12-06 03:06:15','2021-01-16 12:51:34'),
   (89,55,22,9,'2021-12-31 03:09:14','2021-01-21 05:31:32'),
   (90,260,19,3,'2021-12-20 04:21:57','2021-01-15 04:15:26');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (91,16,32,4,'2021-12-04 12:35:37','2021-01-08 09:04:17'),
   (92,75,6,4,'2021-12-20 11:31:19','2021-01-14 11:03:08'),
@@ -118,7 +118,7 @@ VALUES
   (98,130,26,4,'2021-12-08 12:04:33','2021-01-22 12:36:46'),
   (99,216,15,6,'2021-12-19 05:30:14','2021-01-16 02:35:41'),
   (100,64,41,7,'2021-12-21 01:28:29','2021-01-25 03:23:18');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (101,263,45,1,'2022-01-01 01:05:43','2021-01-13 05:50:13'),
   (102,231,30,7,'2021-12-28 01:16:12','2021-01-08 12:47:02'),
@@ -130,7 +130,7 @@ VALUES
   (108,186,34,6,'2021-12-20 01:30:13','2021-01-04 05:09:44'),
   (109,157,18,6,'2021-12-05 10:20:26','2021-01-21 06:05:57'),
   (110,71,13,3,'2021-12-24 11:52:29','2021-01-13 05:50:17');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (111,70,31,1,'2021-12-02 05:03:27','2021-01-25 08:13:34'),
   (112,192,42,3,'2021-12-15 04:54:21','2021-01-06 11:32:14'),
@@ -142,7 +142,7 @@ VALUES
   (118,235,29,2,'2021-12-14 09:42:17','2021-01-17 04:14:00'),
   (119,171,25,6,'2021-12-09 04:59:56','2021-01-30 07:34:47'),
   (120,36,22,5,'2021-12-26 11:57:53','2021-01-19 07:06:21');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (121,260,21,5,'2021-12-11 06:06:46','2021-01-24 08:08:17'),
   (122,66,26,7,'2021-12-28 05:29:12','2021-01-20 09:08:49'),
@@ -154,7 +154,7 @@ VALUES
   (128,212,8,1,'2021-12-25 11:20:34','2021-01-19 06:18:21'),
   (129,185,22,8,'2021-12-21 12:02:58','2021-01-15 12:02:44'),
   (130,106,44,5,'2021-12-22 02:05:01','2021-01-05 04:21:53');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (131,226,37,5,'2021-12-14 11:57:39','2021-01-25 01:35:35'),
   (132,153,22,10,'2021-12-20 10:11:06','2021-01-07 05:17:58'),
@@ -166,7 +166,7 @@ VALUES
   (138,209,41,7,'2021-12-11 10:36:37','2021-01-08 03:35:36'),
   (139,93,35,3,'2021-12-02 09:41:26','2021-01-15 09:09:11'),
   (140,55,16,3,'2021-12-09 01:07:35','2021-01-26 06:38:28');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (141,40,17,5,'2021-12-16 11:29:14','2021-01-09 11:18:08'),
   (142,124,27,8,'2021-12-17 01:05:53','2021-01-15 05:47:06'),
@@ -178,7 +178,7 @@ VALUES
   (148,57,9,1,'2021-12-03 08:03:27','2021-01-25 03:52:23'),
   (149,171,40,6,'2021-12-11 08:13:35','2021-01-17 04:29:30'),
   (150,66,7,3,'2021-12-19 12:19:01','2021-01-04 11:58:55');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (151,263,17,6,'2021-12-19 07:41:52','2021-01-10 01:28:07'),
   (152,68,38,6,'2021-12-06 01:23:27','2021-01-21 03:42:58'),
@@ -190,7 +190,7 @@ VALUES
   (158,120,35,9,'2021-12-07 07:30:36','2021-01-20 12:29:53'),
   (159,278,24,8,'2021-12-29 01:04:11','2021-01-10 11:29:00'),
   (160,100,15,9,'2021-12-10 02:17:32','2021-01-27 05:45:31');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (161,66,5,4,'2021-12-30 12:20:29','2021-01-24 04:28:36'),
   (162,11,8,3,'2021-12-08 12:22:12','2021-01-15 03:04:46'),
@@ -202,7 +202,7 @@ VALUES
   (168,215,6,6,'2021-12-25 08:57:39','2021-01-16 09:48:13'),
   (169,187,36,4,'2021-12-29 04:49:51','2021-01-11 01:51:15'),
   (170,126,33,6,'2021-12-26 10:34:43','2021-01-27 03:43:29');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (171,38,38,3,'2021-12-16 05:38:55','2021-01-14 10:57:40'),
   (172,224,41,9,'2021-12-05 05:30:39','2021-01-20 12:11:46'),
@@ -214,7 +214,7 @@ VALUES
   (178,274,27,1,'2021-12-12 03:08:05','2021-01-27 03:19:08'),
   (179,32,38,9,'2021-12-11 02:21:59','2021-01-25 04:48:18'),
   (180,268,9,4,'2021-12-20 10:23:26','2021-01-17 11:44:10');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (181,157,14,9,'2021-12-04 09:50:51','2021-01-09 02:43:54'),
   (182,32,25,9,'2021-12-30 04:45:41','2021-01-17 09:01:22'),
@@ -226,7 +226,7 @@ VALUES
   (188,270,29,0,'2021-12-24 03:38:27','2021-01-07 10:53:20'),
   (189,68,44,2,'2021-12-26 06:51:07','2021-01-04 03:48:33'),
   (190,260,42,10,'2021-12-23 02:51:02','2021-01-31 07:05:35');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (191,192,37,10,'2021-12-04 01:49:52','2021-01-11 07:08:00'),
   (192,15,23,0,'2021-12-04 01:31:29','2021-01-17 06:02:05'),
@@ -238,7 +238,7 @@ VALUES
   (198,189,13,3,'2021-12-24 03:35:25','2021-01-04 10:02:37'),
   (199,65,8,8,'2021-12-22 02:15:33','2021-01-18 11:09:58'),
   (200,6,8,6,'2021-12-05 08:28:25','2021-01-19 08:37:48');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (201,218,37,7,'2021-12-22 04:37:16','2021-01-14 11:03:35'),
   (202,249,43,2,'2021-12-22 09:05:15','2021-01-19 05:54:03'),
@@ -250,7 +250,7 @@ VALUES
   (208,61,17,3,'2021-12-25 05:18:21','2021-01-23 12:21:57'),
   (209,53,25,7,'2021-12-31 12:13:34','2021-01-06 09:36:19'),
   (210,195,27,3,'2021-12-12 02:23:37','2021-01-13 09:16:17');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (211,124,26,10,'2021-12-04 12:57:36','2021-01-07 03:30:15'),
   (212,43,42,6,'2021-12-10 04:43:11','2021-01-09 11:55:53'),
@@ -262,7 +262,7 @@ VALUES
   (218,237,30,3,'2021-12-12 05:19:42','2021-01-24 07:49:43'),
   (219,247,38,2,'2021-12-31 03:55:09','2021-01-08 03:21:15'),
   (220,285,24,8,'2022-01-01 02:41:29','2021-01-09 03:17:08');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (221,274,29,3,'2021-12-13 08:37:19','2021-01-10 03:00:07'),
   (222,160,40,1,'2021-12-17 12:39:48','2021-01-18 11:02:20'),
@@ -274,7 +274,7 @@ VALUES
   (228,78,39,8,'2021-12-08 10:17:45','2021-01-16 02:43:11'),
   (229,291,10,5,'2021-12-27 08:12:47','2021-01-29 03:33:43'),
   (230,157,9,1,'2021-12-03 11:01:32','2021-01-22 02:43:23');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (231,153,7,5,'2021-12-19 11:07:40','2021-01-24 03:21:11'),
   (232,295,12,10,'2021-12-15 12:08:02','2021-01-05 12:17:39'),
@@ -286,7 +286,7 @@ VALUES
   (238,149,23,6,'2021-12-05 11:02:03','2021-01-12 05:31:23'),
   (239,52,25,8,'2021-12-11 07:33:40','2021-01-15 06:04:39'),
   (240,105,10,6,'2021-12-14 12:18:29','2021-01-24 09:58:35');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (241,274,42,0,'2021-12-10 05:57:29','2021-01-27 10:06:27'),
   (242,26,10,9,'2021-12-13 02:29:05','2021-01-29 05:08:26'),
@@ -298,7 +298,7 @@ VALUES
   (248,243,10,3,'2021-12-05 02:21:00','2021-01-17 05:09:48'),
   (249,29,33,10,'2021-12-31 08:25:18','2021-01-29 12:23:22'),
   (250,17,44,5,'2021-12-19 10:30:28','2021-01-23 12:25:40');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (251,212,15,4,'2021-12-16 04:00:42','2021-01-14 11:52:09'),
   (252,62,28,7,'2021-12-22 03:22:19','2021-01-28 05:31:07'),
@@ -310,7 +310,7 @@ VALUES
   (258,174,10,6,'2021-12-27 03:13:58','2021-01-07 02:23:37'),
   (259,48,18,1,'2021-12-31 06:04:51','2021-01-31 08:25:10'),
   (260,217,19,4,'2021-12-28 05:09:53','2021-01-31 03:39:27');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (261,70,8,10,'2021-12-25 12:22:20','2021-01-12 02:33:06'),
   (262,137,22,2,'2022-01-01 04:19:30','2021-01-30 05:08:45'),
@@ -322,7 +322,7 @@ VALUES
   (268,263,18,9,'2021-12-24 07:35:01','2021-01-10 12:07:40'),
   (269,231,8,2,'2021-12-27 11:39:27','2021-01-12 05:08:11'),
   (270,157,22,4,'2021-12-28 01:11:48','2021-01-22 12:46:35');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (271,83,35,3,'2021-12-13 12:13:37','2021-01-14 08:59:09'),
   (272,15,11,6,'2022-01-01 07:20:22','2021-01-14 07:34:32'),
@@ -334,7 +334,7 @@ VALUES
   (278,13,39,6,'2021-12-25 04:52:51','2021-01-12 05:42:38'),
   (279,201,15,7,'2021-12-08 08:32:10','2021-01-22 07:32:50'),
   (280,285,23,10,'2021-12-16 04:37:38','2021-01-11 08:54:28');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (281,239,19,1,'2021-12-10 06:30:21','2021-01-24 05:59:11'),
   (282,177,26,6,'2021-12-03 11:31:28','2021-01-16 01:35:12'),
@@ -346,7 +346,7 @@ VALUES
   (288,215,29,9,'2021-12-11 04:31:43','2021-01-14 10:35:13'),
   (289,188,25,2,'2021-12-25 02:08:33','2021-01-10 10:04:03'),
   (290,4,12,6,'2021-12-12 09:16:30','2021-01-06 10:45:41');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (291,49,16,6,'2021-12-13 06:36:19','2021-01-23 01:41:59'),
   (292,49,41,3,'2021-12-19 05:06:16','2021-01-19 07:57:42'),
@@ -358,7 +358,7 @@ VALUES
   (298,102,19,1,'2021-12-21 04:51:47','2021-01-26 10:06:52'),
   (299,47,19,8,'2021-12-11 02:14:19','2021-01-23 03:00:01'),
   (300,99,12,3,'2021-12-29 07:11:04','2021-01-14 02:50:17');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (301,227,37,2,'2021-12-03 11:39:04','2021-01-31 04:32:18'),
   (302,228,23,7,'2021-12-23 05:56:19','2021-01-16 11:31:47'),
@@ -370,7 +370,7 @@ VALUES
   (308,99,16,1,'2021-12-04 07:27:58','2021-01-07 11:55:32'),
   (309,124,44,10,'2021-12-29 06:25:11','2021-01-08 10:10:41'),
   (310,143,29,5,'2021-12-25 04:41:33','2021-01-26 03:25:01');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (311,82,9,6,'2021-12-09 04:30:08','2021-01-29 10:26:55'),
   (312,99,38,8,'2021-12-23 07:49:05','2021-01-10 07:09:20'),
@@ -382,7 +382,7 @@ VALUES
   (318,239,6,5,'2021-12-25 03:23:54','2021-01-20 09:58:38'),
   (319,144,13,2,'2021-12-25 03:48:59','2021-01-14 03:45:21'),
   (320,211,33,8,'2021-12-11 06:46:00','2021-01-16 02:59:53');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (321,188,39,9,'2021-12-09 01:51:14','2021-01-26 11:35:24'),
   (322,265,23,5,'2021-12-03 11:37:15','2021-01-06 02:15:45'),
@@ -394,7 +394,7 @@ VALUES
   (328,193,28,7,'2021-12-02 02:40:21','2021-01-21 11:42:10'),
   (329,249,31,10,'2021-12-27 06:58:36','2021-01-22 12:39:56'),
   (330,250,18,6,'2021-12-22 07:06:54','2021-01-20 05:43:09');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (331,18,7,5,'2021-12-29 11:04:17','2021-01-06 02:36:11'),
   (332,289,42,8,'2021-12-23 02:42:40','2021-01-23 05:43:48'),
@@ -406,7 +406,7 @@ VALUES
   (338,17,32,8,'2021-12-30 06:00:15','2021-01-20 07:01:36'),
   (339,258,23,6,'2021-12-23 12:01:03','2021-01-25 03:52:21'),
   (340,105,6,4,'2022-01-01 12:52:44','2021-01-05 01:04:19');
-INSERT INTO [restaurant_has_sale] (id,restaurant_id,sale_id,percentage,since,until)
+INSERT INTO [dbo].[restaurants_have_sales] (id,restaurant_id,sale_id,percentage,since,until)
 VALUES
   (341,231,42,5,'2021-12-31 11:24:00','2021-01-22 06:40:39'),
   (342,34,35,7,'2021-12-17 03:41:01','2021-01-17 07:17:31'),
