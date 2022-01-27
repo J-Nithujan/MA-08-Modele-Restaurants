@@ -580,6 +580,7 @@ ALTER TABLE [dbo].[order_details] CHECK CONSTRAINT [FK_order_details_dishes]
 GO
 ALTER TABLE [dbo].[order_details]  WITH CHECK ADD  CONSTRAINT [FK_order_details_orders] FOREIGN KEY([order_id])
 REFERENCES [dbo].[orders] ([id])
+ON DELETE CASCADE
 GO
 ALTER TABLE [dbo].[order_details] CHECK CONSTRAINT [FK_order_details_orders]
 GO
@@ -640,6 +641,7 @@ ALTER TABLE [dbo].[reviews] CHECK CONSTRAINT [FK_reviews_restaurants]
 GO
 ALTER TABLE [dbo].[reviews]  WITH CHECK ADD  CONSTRAINT [FK_reviews_users] FOREIGN KEY([user_id])
 REFERENCES [dbo].[users] ([id])
+ON DELETE CASCADE
 GO
 ALTER TABLE [dbo].[reviews] CHECK CONSTRAINT [FK_reviews_users]
 GO
