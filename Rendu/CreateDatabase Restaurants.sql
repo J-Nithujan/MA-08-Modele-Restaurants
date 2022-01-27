@@ -409,7 +409,7 @@ CREATE TABLE [dbo].[restaurant_has_sale](
 	[id] [int] NOT NULL,
 	[restaurant_id] [int] NULL,
 	[sale_id] [int] NULL,
-	[percentage] [int] NULL,
+	[percentage] [int] NULL CHECK (percentage <= 50),
 	[since] [datetime] NULL,
 	[until] [datetime] NULL,
  CONSTRAINT [PK_restaurant_has_sale] PRIMARY KEY CLUSTERED 
@@ -524,7 +524,7 @@ CREATE TABLE [dbo].[users](
 	[firstname] [varchar](60) NULL,
 	[lastname] [varchar](60) NULL,
 	[password] [varchar](100) NULL,
-	[birthdate] [date] NULL,
+	[birthdate] [date] NULL CHECK (DATEDIFF(year, GETDATE(), birthdate) >= 18),
 	[road] [varchar](45) NULL,
 	[location_id] [int] NULL,
  CONSTRAINT [PK_users] PRIMARY KEY CLUSTERED 
