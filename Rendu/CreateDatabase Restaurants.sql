@@ -1,5 +1,7 @@
 USE [db_restaurants]
 GO
+EXEC sys.sp_dropextendedproperty @name=N'MS_Description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'reviews'
+GO
 ALTER TABLE [dbo].[users] DROP CONSTRAINT [FK_users_locations]
 GO
 ALTER TABLE [dbo].[reviews] DROP CONSTRAINT [FK_reviews_users]
