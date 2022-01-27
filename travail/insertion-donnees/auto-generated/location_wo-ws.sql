@@ -1,4 +1,4 @@
-INSERT INTO [dbo].[localtions] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (1,'arcu.',1000),
   (2,'amet,',1001),
@@ -10,7 +10,7 @@ VALUES
   (8,'vulputate',1007),
   (9,'mollis',1008),
   (10,'sollicitudin',1009);
-INSERT INTO [dbo].[localtions] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (11,'turpis',1010),
   (12,'nec',1011),
@@ -22,7 +22,7 @@ VALUES
   (18,'Nullam',1017),
   (19,'amet',1018),
   (20,'sodales',1019);
-INSERT INTO [dbo].[localtions] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (21,'elit',1020),
   (22,'tincidunt.',1021),
@@ -34,7 +34,7 @@ VALUES
   (28,'non',1027),
   (29,'suscipit,',1028),
   (30,'Proin',1029);
-INSERT INTO [dbo].[localtions] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (31,'id',1030),
   (32,'dui',1031),
@@ -46,7 +46,7 @@ VALUES
   (38,'nunc',1037),
   (39,'erat.',1038),
   (40,'convallis',1039);
-INSERT INTO [dbo].[localtions] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (41,'blandit',1040),
   (42,'consequat',1041),
@@ -58,7 +58,7 @@ VALUES
   (48,'justo.',1047),
   (49,'fermentum',1048),
   (50,'sem',1049);
-INSERT INTO [dbo].[localtions] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (51,'non,',1050),
   (52,'id',1051),
@@ -70,7 +70,7 @@ VALUES
   (58,'Sed',1057),
   (59,'enim.',1058),
   (60,'congue,',1059);
-INSERT INTO [dbo].[localtions] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (61,'taciti',1060),
   (62,'Nam',1061),
@@ -82,7 +82,7 @@ VALUES
   (68,'sed',1067),
   (69,'velit.',1068),
   (70,'malesuada',1069);
-INSERT INTO [dbo].[localtions] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (71,'id',1070),
   (72,'placerat',1071),
@@ -94,7 +94,7 @@ VALUES
   (78,'Sed',1077),
   (79,'lobortis,',1078),
   (80,'dolor',1079);
-INSERT INTO [dbo].[localtions] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (81,'ipsum',1080),
   (82,'lacus.',1081),
@@ -106,7 +106,7 @@ VALUES
   (88,'facilisis',1087),
   (89,'fames',1088),
   (90,'odio',1089);
-INSERT INTO [dbo].[localtions] (id,city,ZIP)
+INSERT INTO [dbo].[locations] (id,city,ZIP)
 VALUES
   (91,'sem.',1090),
   (92,'at',1091),
