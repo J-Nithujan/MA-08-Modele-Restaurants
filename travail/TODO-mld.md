@@ -10,12 +10,11 @@ Réflexions à faire ensemble:
 MLD
 
 - [ ] Modifications
-  - [ ] Restaurant's sales : `since` et `until`, au lieu de `start` et `end` car "end" est un mot-clef en MSSQL.
-    - [ ] dans MLD !!!
+  - [x] Restaurant's sales : `since` et `until`, au lieu de `start` et `end` car "end" est un mot-clef en MSSQL.
     - [x] dans script création tables
-    - [ ] dans script fill data
-    - [ ] ? dans MCD  ou ailleurs ?
-
+    - [x] dans script fill data
+    - [x] ? dans MCD  ou ailleurs ?
+  
 - [x] Les associations et Les tables intermédiaires 
   - [x] Vérifier Les cardinalités
     - [x] (cardinalités 0 au lieu 1)
