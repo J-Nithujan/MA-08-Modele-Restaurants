@@ -1,5 +1,3 @@
-USE [ECommerce_data]
-GO
 
 INSERT [dbo].[sales] ([id], [name]) 
       VALUES

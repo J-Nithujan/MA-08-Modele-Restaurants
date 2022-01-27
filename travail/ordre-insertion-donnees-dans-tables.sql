@@ -8,12 +8,12 @@
 # =======================================================
 
 # ordre 1 validé
-INSERT [dbo].[sales]
-INSERT [dbo].[allergens]
-INSERT [dbo].[dishes_types]
-INSERT [dbo].[measurement_units]
-INSERT [dbo].[locations]
-INSERT [dbo].[restaurant_types]
+INSERT [dbo].[sales] -- ok
+INSERT [dbo].[allergens] -- ok
+INSERT [dbo].[dishes_types] -- ok
+INSERT [dbo].[measurement_units] -- ok
+INSERT [dbo].[locations] -- ok
+INSERT [dbo].[restaurant_types] -- ok
 
 # ordre 2 validé
 INSERT [dbo].[dishes]

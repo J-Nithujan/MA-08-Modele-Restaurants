@@ -9,7 +9,7 @@
 
 /**
  * 
- * Data generated using RedGate's Compliant Database DevOps.
+ * Data generated using RedGate's Compliant Database DevOps tool.
  * The database is created using their plugin SQL Data Generator.
  * 
  * As we discussed about issues encountered by different teams
@@ -21,6 +21,10 @@
  * This specific file has been re-exported as "Data only" from SSMS
  * in order to share the data between the team members.
  */
+
+
+ /** 
+  */
 
 
 USE [db_restaurants]
