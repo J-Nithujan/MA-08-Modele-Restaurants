@@ -26,10 +26,6 @@ ALTER TABLE [dbo].[restaurant_has_dish] DROP CONSTRAINT [FK_restaurant_has_dish_
 GO
 ALTER TABLE [dbo].[orders] DROP CONSTRAINT [FK_orders_users]
 GO
-ALTER TABLE [dbo].[order_has_order_detail] DROP CONSTRAINT [FK_order_has_order_detail_orders]
-GO
-ALTER TABLE [dbo].[order_has_order_detail] DROP CONSTRAINT [FK_order_has_order_detail_order_details]
-GO
 ALTER TABLE [dbo].[order_details] DROP CONSTRAINT [FK_order_details_orders]
 GO
 ALTER TABLE [dbo].[order_details] DROP CONSTRAINT [FK_order_details_dishes]
@@ -90,10 +86,6 @@ GO
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[orders]') AND type in (N'U'))
 DROP TABLE [dbo].[orders]
 GO
-/****** Object:  Table [dbo].[order_has_order_detail]    Script Date: 19.01.2022 08:33:37 ******/
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[order_has_order_detail]') AND type in (N'U'))
-DROP TABLE [dbo].[order_has_order_detail]
-GO
 /****** Object:  Table [dbo].[order_details]    Script Date: 19.01.2022 08:33:37 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[order_details]') AND type in (N'U'))
 DROP TABLE [dbo].[order_details]
@@ -143,7 +135,7 @@ GO
 CREATE DATABASE [db_restaurants]
  CONTAINMENT = NONE
  ON  PRIMARY 
-( NAME = N'db_restaurants', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\db_restaurants.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+( NAME = N'db_restaurants', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\db_restaurants.mdf' , SIZE = 73728KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
  LOG ON 
 ( NAME = N'db_restaurants_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\db_restaurants_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
  WITH CATALOG_COLLATION = DATABASE_DEFAULT
@@ -375,17 +367,6 @@ CREATE TABLE [dbo].[order_details](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[order_has_order_detail]    Script Date: 19.01.2022 08:33:37 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE TABLE [dbo].[order_has_order_detail](
-	[id] [int] NOT NULL,
-	[order_id] [int] NULL,
-	[oder_detail_id] [int] NULL
-) ON [PRIMARY]
-GO
 /****** Object:  Table [dbo].[orders]    Script Date: 19.01.2022 08:33:37 ******/
 SET ANSI_NULLS ON
 GO
@@ -427,8 +408,8 @@ CREATE TABLE [dbo].[restaurant_has_sale](
 	[restaurant_id] [int] NULL,
 	[sale_id] [int] NULL,
 	[percentage] [int] NULL,
-	[start] [datetime] NULL,
-	[end] [datetime] NULL,
+	[since] [datetime] NULL,
+	[until] [datetime] NULL,
  CONSTRAINT [PK_restaurant_has_sale] PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
@@ -599,16 +580,6 @@ ALTER TABLE [dbo].[order_details]  WITH CHECK ADD  CONSTRAINT [FK_order_details_
 REFERENCES [dbo].[orders] ([id])
 GO
 ALTER TABLE [dbo].[order_details] CHECK CONSTRAINT [FK_order_details_orders]
-GO
-ALTER TABLE [dbo].[order_has_order_detail]  WITH CHECK ADD  CONSTRAINT [FK_order_has_order_detail_order_details] FOREIGN KEY([oder_detail_id])
-REFERENCES [dbo].[order_details] ([id])
-GO
-ALTER TABLE [dbo].[order_has_order_detail] CHECK CONSTRAINT [FK_order_has_order_detail_order_details]
-GO
-ALTER TABLE [dbo].[order_has_order_detail]  WITH CHECK ADD  CONSTRAINT [FK_order_has_order_detail_orders] FOREIGN KEY([order_id])
-REFERENCES [dbo].[orders] ([id])
-GO
-ALTER TABLE [dbo].[order_has_order_detail] CHECK CONSTRAINT [FK_order_has_order_detail_orders]
 GO
 ALTER TABLE [dbo].[orders]  WITH CHECK ADD  CONSTRAINT [FK_orders_users] FOREIGN KEY([user_id])
 REFERENCES [dbo].[users] ([id])
