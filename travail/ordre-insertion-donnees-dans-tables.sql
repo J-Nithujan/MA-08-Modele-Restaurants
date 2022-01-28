@@ -8,18 +8,18 @@
 # =======================================================
 
 # ordre 1 validé
-INSERT [dbo].[sales] -- ok (import bdd ok)
-INSERT [dbo].[allergens] -- ok (import bdd ok)
+INSERT [dbo].[sales] -- ok (import bdd ok) / 50
+INSERT [dbo].[allergens] -- ok (import bdd ok) / 50
 INSERT [dbo].[dishes_types] -- ok (import bdd ok)
 INSERT [dbo].[measurement_units] -- ok (import bdd ok)
 INSERT [dbo].[locations] -- ok (import bdd ok)
 INSERT [dbo].[restaurant_types] -- ok (import bdd ok)
 
 # ordre 2 validé
-INSERT [dbo].[dishes] -- /
-INSERT [dbo].[ingredients] -- /
-INSERT [dbo].[users] -- /
-INSERT [dbo].[restaurants] -- /
+INSERT [dbo].[dishes] -- / 350
+INSERT [dbo].[ingredients] -- / 200
+INSERT [dbo].[users] -- / 400
+INSERT [dbo].[restaurants] -- / 300
 
 # ordre 3 validé
 INSERT [dbo].[dish_has_allergen] -- 500
