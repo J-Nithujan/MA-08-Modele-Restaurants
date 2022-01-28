@@ -1,3 +1,6 @@
+USE [db_restaurants]
+GO
+
 CREATE VIEW counting_elements AS
 
 SELECT a.nb AS nb_allergens, b.nb AS nb_dish_has_allergen, c.nb AS nb_dish_has_ingredient, d.nb AS nb_dishes, e.nb AS nb_dishes_types, f.nb AS nb_ingredients, g.nb AS nb_locations, h.nb AS nb_measurement_units, i.nb AS nb_order_detail_has_ingredient, j.nb AS nb_order_details, l.nb AS nb_orders, m.nb AS nb_restaurant_has_dish, n.nb AS nb_restaurant_has_sale, o.nb AS nb_restaurant_has_user, p.nb AS nb_restaurant_has_type_of_restaurant, q.nb AS nb_restaurant_types, r.nb AS nb_restaurants, s.nb AS nb_reviews, t.nb AS nb_sales, u.nb AS nb_users
