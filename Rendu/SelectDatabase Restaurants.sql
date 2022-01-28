@@ -23,6 +23,6 @@ SELECT * from [db_restaurants].[dbo].users
 -- Permettre de rechercher des restaurants:
 -- - avec un bon avis (reviews)
 SELECT * FROM [db_restaurants].[dbo].restaurants AS resto
-    INNER JOIN [db_restaurants].[dbo].reviews AS avis ON reviews.restaurant_id = resto.id
+    INNER JOIN [db_restaurants].[dbo].reviews AS avis ON restaurant_id = resto.id
     WHERE avis.rating >= 4;
 
