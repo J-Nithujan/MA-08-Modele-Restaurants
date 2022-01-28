@@ -45,6 +45,8 @@ MLD
 
 **Script création de BDD**
 
+TODO : les contraintes n'ont pas été portées de Workbench (Unicité en particulier)
+
 - [ ] Contraintes
   - [ ] unicité
     - [ ] Restaurant -`CONSTRAINT AK_TransactionID UNIQUE(TransactionID)`
